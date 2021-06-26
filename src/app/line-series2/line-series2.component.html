@@ -1,0 +1,24 @@
+<div id="chart"></div>
+<div *ngIf="enableTooltip">
+    <div class="ttip" [ngStyle]="{left:tooltipPosition?.x,top:tooltipPosition?.y}">
+        <div class="ttip-data-container">
+            <div class="ttip-data-row">
+                <div class="ttip-label">Value</div>
+                <div class="ttip-value">{{tooltipData.value}}</div>
+            </div>
+            <div class="ttip-data-row">
+                <div class="ttip-label">Upper Range</div>
+                <div class="ttip-value">{{tooltipData.max}}</div>
+            </div>
+            <div class="ttip-data-row">
+                <div class="ttip-label">Lowe Range</div>
+                <div class="ttip-value">{{tooltipData.min}}</div>
+            </div>
+            <div class="ttip-data-row">
+                <div class="ttip-label">Date</div>
+                <div class="ttip-value">{{tooltipData.date | date :'short'}}</div>
+            </div>
+        </div>
+    </div>
+
+</div>

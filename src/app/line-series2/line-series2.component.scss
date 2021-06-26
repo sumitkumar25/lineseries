@@ -1,0 +1,19 @@
+.ttip{
+    position:absolute;
+    transition: all .5s ease;
+    background-color: black;
+    color: white;
+}
+.ttip-data-container{
+    width: 300px;
+    .ttip-data-row{
+        display: flex;
+        padding: 2px 5px;
+    }
+    .ttip-label{
+        flex: 1 0 0;
+    }
+    .ttip-value{
+        flex: 1 0 0;
+    }
+}

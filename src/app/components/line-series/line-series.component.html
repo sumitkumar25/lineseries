@@ -1,0 +1,8 @@
+<section style="position: relative;">
+    <div #chart></div>
+    <div class="tooltip" [hidden]="!enableTooltip">
+        <ng-container *ngIf="tooltipItem">
+            {{tooltipItem.name}}
+        </ng-container>
+    </div>
+</section>
